@@ -1,0 +1,630 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* for menu bar */
+
+.fontClass {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.navbarContainer {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 200px;
+    padding-bottom: 35px;
+    border-bottom: 0.5px solid hsla(219, 9%, 45%, 0.3);
+    position: relative;    
+}
+
+.leftNavbar, .rightNavbar {
+    display: flex;
+    flex-direction: row;
+}
+
+.leftNavbar {
+    margin-left: 3rem;
+    padding-top: 10px;
+}
+
+.rightNavbar {
+    margin-right: 3rem;
+}
+
+.hamburgerMenu {
+    padding-top: 2px;
+    display: none;
+}
+
+.logo {
+    height: 30px;
+    margin-right: 1rem;
+}
+
+.textMenu {
+    list-style: none;
+    font-weight: 550;
+    color: hsl(220, 14%, 75%);
+    font-size: 13px;
+    display: inline-block;
+    height: 20px;
+    padding: 6px;
+    margin-left: 1rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.tabMenus {
+    position: relative;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.slider {
+    display: none;    
+    height: 3px;
+    background-color: hsla(26, 100%, 55%, 0.8);
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+    bottom: 0;           
+}
+
+.cartImage {
+    width: 15px;
+    padding-top: 12px;
+    margin-right: 2rem;
+    user-select: none;
+    cursor: pointer;
+    position: relative;    
+}
+
+.notiNumber {
+    top: 10px;
+    right: 88px;
+    display: none;
+}
+
+.avatarImage {
+    width: 40px;
+    vertical-align: middle;
+    user-select: none;
+    cursor: pointer;    
+}
+
+/* for main content left side */
+
+.mainContentContainer {
+    width: 100%;    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 110px;
+    margin-left: 40px;    
+}
+
+.combineContainer {
+    width: 50%;
+}
+
+.leftContainer {
+    width: 100%;
+    display: inline-block;
+    margin-left: 150px;           
+}
+
+.overlayContainer {
+    width: 100%;        
+    display: none;        
+}
+
+.carouselImage {
+    width: 390px;
+    height: 350px;
+}
+
+.mainProduct {
+    margin-bottom: 2rem;
+}
+
+.mainProductImage {
+    width: 380px;
+    border-radius: 20px;    
+}
+
+.thumbnailImage {
+    width: 80px;
+    border-radius: 10px;
+    margin-right: 1rem;
+    user-select: none;
+    cursor: pointer;
+}
+
+.thumbnailImage:hover {
+    opacity: 0.8;
+}
+
+/* for main content right side */
+
+.rightContainer {
+    width: 50%;
+    display: inline-block;        
+}
+
+.companyText {
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-weight: 700;
+    font-size: 12px;
+    color: hsla(26, 100%, 55%, 0.8);
+    margin-top: 50px;
+}
+
+.headerOne {
+    margin-top: 1.5rem;
+}
+
+.headerTwo {
+    margin-top: 0;
+}
+
+.headerOne, .headerTwo {
+    font-weight: 700;
+}
+
+.textInfo {
+    font-weight: 350;
+    color: rgb(145, 147, 151);
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.textParagraph {
+    width: 435px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.priceText {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-right: 0.7rem;
+    vertical-align: middle;
+    user-select: none;
+    cursor: pointer;
+}
+
+.discountText {
+    background-color: hsla(26, 100%, 55%, 0.2);
+    color: hsla(26, 100%, 55%, 0.7);
+    font-weight: 800;
+    font-size: 15px;
+    display: inline-block;
+    width: 3rem;    
+    border: 1px solid grey;
+    border-radius: 5px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.priceText2 {
+    font-weight: 600;
+    color: rgb(117, 121, 128);
+    font-size: 14px;
+    margin-bottom: 0;
+    text-decoration: line-through;
+    margin-top: 5px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.btnContainer {
+    margin-top: 35px;
+}
+
+.minusSignButton, .plusSignButton, .countNumber {
+    background-color: hsla(220, 14%, 75%, 0.1);
+    width: 55px;
+}
+
+.minusSign {
+    width: 13px;
+    height: 3px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.countNumber {
+    font-weight: 600;
+    font-size: 15px;
+    width: 38px;
+    text-align: center;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid hsla(220, 14%, 75%, 0);
+    user-select: none;    
+}
+
+.plusSign {
+    width: 13px;
+    height: 11px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.cartButton {
+    height: 40px;
+    text-align: center;
+    width: 210px;
+    background-color: hsla(26, 100%, 55%,1);
+    margin-top: 33px;
+    margin-left: 10px;
+}
+
+.cardIcon {
+    width: 13px;
+    margin-right: 10px;
+}
+
+/* for lightbox */
+
+.lightBox {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+.activeLightbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.lightBoxImage {
+    width: 500px;
+    height: 500px;
+    display: block;
+}
+
+.closeImage {
+    width: 20px;
+    cursor: pointer;
+    user-select: none;
+    display: block;
+    position: relative;
+    top: -540px;
+    left: 480px;
+    z-index: 5;
+}
+
+.previousImage {
+    width: 40px;
+    height: 45px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: white;    
+    position: relative;
+    left: -20px;
+    top: -320px;
+    cursor: pointer;
+}
+
+.nextImage {
+    width: 40px;
+    height: 45px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: white;    
+    position: relative;
+    left: 440px;
+    top: -320px;
+    cursor: pointer;
+}
+
+/* for footer */
+
+footer {
+    font-size: 11px;
+    text-align: center;
+}
+
+footer a { 
+    color: hsl(228, 45%, 44%);
+}
+
+/* for cart content styling */
+
+.cartContent{    
+    width: 36rem;
+    position: absolute;
+    left: 50%;
+    top: calc(100% + 1rem);
+    transform: translateX(-50%) scaleY(0);
+    -webkit-transform: translateX(-50%) scaleY(0);
+    transform-origin: top;
+    -webkit-transform-origin: top;
+    z-index: 9999;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+    padding-bottom: 2.7rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.cartContentFull {
+    padding: 0 5px;
+}
+
+.cartContentHeading{
+    font-size: 1.6rem;
+    color: var(--very-dark-blue);
+    padding: 0.5rem 2.4rem;
+    border-bottom: 0.3px solid hsl(220, 14%, 75%);
+    font-weight: 700;
+}
+
+
+.cartContentProduct{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.cartContentProdImg{
+    width: 50px;
+    height: 40px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 1.6rem;
+}
+.cartContentProdImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cartContentProdText h6{
+    color: hsl(220, 14%, 75%);
+    font-size: 13px;
+    font-weight: 600;   
+}
+.cartContentProdPrice{
+    color: var(--dark-grayish-blue);
+    font-size: 14px;
+}
+.cartContentProdPrice span{
+    color: var(--very-dark-blue);
+    font-weight: 700;
+}
+.cartContentBinIcon{
+    margin-left: auto;
+    fill: var(--grayish-blue);
+    cursor: pointer;
+}
+.cartContentBtn{
+    border: none;
+    background-color: hsla(26, 100%, 55%,1);
+    color: white;
+    width: calc(100% - 4.8rem);
+    display: block;
+    margin: 20px auto;
+    font-size: 20px;
+    padding: 10px 0;
+    border-radius: 10px;
+    font-weight: 400;
+}
+
+.cartContentVisible{
+    transform: translateX(+50%) scaleY(1);
+    -webkit-transform: translateX(+50%) scaleY(1);
+}
+
+.cartContentEmpty{    
+    font-weight: 400;
+    color: var(--dark-grayish-blue);
+    text-align: center;    
+}
+
+/* for various screen view */
+
+@media (max-width: 1200px) {
+
+    .combineContainer {
+        width: 100%;
+    }
+
+    .leftContainer {
+        width: 80%;
+        text-align: center;
+        margin-left: 30px;
+        margin-bottom: 50px;
+    }
+
+    .rightContainer {
+        width: 100%;
+        margin-left: 215px;
+    }
+
+}
+
+@media (max-width: 1130px) {
+
+    .hamburgerMenu {
+        display: block;
+        margin-right: 1rem;
+    }
+
+    .textMenuContainer {
+        display: none;
+    }
+}
+
+@media (max-width: 1120px) {
+
+    .cartContent {
+        width: 100%;
+    }
+
+    .cartContentVisible{
+        transform: translateX(+50%) scaleY(1);
+        -webkit-transform: translateX(-40%) scaleY(1);
+    }
+}
+
+@media (max-width: 990px) {
+
+    .rightContainer {
+        margin-left: 110px;
+    }
+}
+
+@media (max-width: 769px) {
+
+    .leftNavbar {
+        margin-left: 0;
+    }
+
+    .rightNavbar {
+        margin-right: 0;
+    }
+
+    .rightContainer {
+        margin-left: 35px;
+    }
+
+    .notiNumber {
+        top: 10px;
+        right: 40px;
+    }
+        
+}
+
+
+/* for mobile screen view */
+
+@media screen and (max-width : 576px) {
+
+    /* for top menu bar */
+    .hamburgerMenu {
+        display: block;
+        margin-right: 1rem;
+    }
+
+    .textMenuContainer {
+        display: none;
+    }
+
+    .navbar {
+        width: 410px;
+        margin-top: 15px;        
+    }
+
+    .navbarContainer {        
+        margin: 0 auto;
+        border: none;        
+    }
+
+    .leftNavbar {
+        margin-left: 0;
+        padding-top: 5px;
+    }
+
+    .rightNavbar {
+        margin-right: 0;
+    }
+
+    .cartImage {
+        margin-right: 1rem;
+    }
+
+    .cartContentVisible{
+        transform: translateX(+50%) scaleY(1);
+        -webkit-transform: translateX(-52%) scaleY(1);
+    }
+
+    .notiNumber {
+        top: 10px;
+        right: 25px;
+    }
+
+    /* for top left side amendment */
+
+    .container {
+        padding: 0;
+    }
+
+    .mainContentContainer {
+        margin: 0;
+    }
+
+    .combineContainer {
+        width: 100%;
+    }
+
+    .leftContainer {
+        display: none;
+    }
+
+    .overlayContainer {
+        width: 100%;
+        display: block;        
+    }
+    
+    /* for top right side amendment */
+
+    .rightContainer {
+        width: 100%;        
+        margin-left: 25px;
+        margin-bottom: 40px;
+    }
+
+    .textParagraph {
+        width: 320px;
+    }
+
+    .priceText2 {
+        display: inline-block;
+        margin-left: 90px;
+    }
+
+    .btnContainer {
+        text-align: center;
+        margin-left: 25px;
+    }
+
+    .cartButton {
+        width: 260px;
+        height: 50px;
+        display: block;
+        margin-left: 40px;
+    }
+
+    .minusSignButton, .plusSignButton, .countNumber {        
+        width: 95px;
+        height: 50px;
+    }
+
+    /* for footer amendment */
+
+    footer {        
+        text-align: center;
+    }
+}
